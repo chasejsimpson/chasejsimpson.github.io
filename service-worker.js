@@ -1,10 +1,11 @@
-const CACHE_NAME = 'scenario-generator-v2'; // <-- Changed from v1 to v2
+const CACHE_NAME = 'scenario-generator-v4'; // <-- Changed from v3 to v4
 const FILES_TO_CACHE = [
     '/',
     '/index.html',
     '/style.css',
     '/app.js',
-    '/img/pal-logo.png', // <-- Added the path to your new logo
+    '/manifest.json', // <-- Added the manifest file to the cache
+    '/img/pal-logo.png',
     '/icons/icon-192x192.png',
     '/icons/icon-512x512.png'
 ];

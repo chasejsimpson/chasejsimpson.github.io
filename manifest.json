@@ -1,11 +1,11 @@
 {
-    "name": "Emergency Scenario Generator",
-    "short_name": "ScenarioGen",
+    "name": "Emergency Scenario of the Day",
+    "short_name": "ESOD",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#121212",
     "theme_color": "#333333",
-    "description": "A simple generator for emergency preparedness scenarios.",
+    "description": "A simple generator for crew briefing emergency scernarios of the day.",
     "icons": [
         {
             "src": "icons/icon-192x192.png",
