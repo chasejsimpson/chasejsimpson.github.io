@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Scenario of the Day</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#333333">
+</head>
+<body>
+    <main>
+        <img src="img/pal-logo.png" alt="PAL Airlines Logo" id="app-logo">
+        
+        <h1>Emergency Scenario of the Day</h1>
+        
+        <div class="controls">
+            <button id="generate-btn">Generate New Scenario</button>
+        </div>
+
+        <div id="output-container">
+            <h2 id="scenario-title"></h2>
+            <h3 id="scenario-subtitle"></h3>
+            <p id="scenario-text"></p>
+            
+            <button id="considerations-btn" class="hidden">Show Key Considerations</button>
+            <div id="considerations-text" class="hidden"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* PAL Airlines Brand-Aligned Stylesheet */
+
+/* Define Brand Colors and Fonts from the Guide as CSS Variables */
+:root {
+    --pal-blue: #283874; /* [cite: 49] */
+    --pal-orange: #ffa300; /* [cite: 48] */
+    --container-bg: #ffffff; /* [cite: 329] */
+    --background-color: #d8d7d6; /* Light Cool Gray from Neutrals [cite: 375] */
+    --text-color: #56565a; /* Dark Cool Gray for body text [cite: 378] */
+    --subtitle-color: #777678; /* Cool Gray for subtitles [cite: 377] */
+    --brand-font: Calibri, sans-serif; /* Universal typeface [cite: 172] */
+}
+
+body {
+    font-family: var(--brand-font);
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--container-bg);
+    border: 1px solid #c0c0c0; /* A slightly darker border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* New Style for the Logo */
+#app-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    max-width: 250px;
+    height: auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+    text-transform: uppercase; /* Guideline for headlines  */
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+h2#scenario-title {
+    color: var(--pal-blue); /* Blue for headings [cite: 324] */
+    text-transform: uppercase; /* Guideline for headlines  */
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h3#scenario-subtitle {
+    font-size: 1.15rem;
+    font-weight: bold; /* Guideline for subheads  */
+    color: var(--subtitle-color);
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+button {
+    background-color: var(--pal-blue);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    text-transform: uppercase;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#output-container {
+    border-top: 1px solid var(--background-color);
+    padding-top: 1rem;
+}
+
+/* Style the secondary button with the brand's accent color */
+#considerations-btn {
+    display: block;
+    margin: 1.5rem auto 0;
+    background-color: var(--pal-orange); /* Orange for accents [cite: 324] */
+}
+
+p, #considerations-text {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 5px;
+    white-space: pre-wrap;
+    color: var(--text-color);
+}
+
+.hidden {
+    display: none;
+}
