@@ -1,36 +1,48 @@
 /* PAL Airlines Brand-Aligned Stylesheet */
 
-/* Define Brand Colors and Fonts from the Guide as CSS Variables */
 :root {
-    --pal-blue: #283874; /* [cite: 49] */
-    --pal-orange: #ffa300; /* [cite: 48] */
-    --container-bg: #ffffff; /* [cite: 329] */
-    --background-color: #d8d7d6; /* Light Cool Gray from Neutrals [cite: 375] */
-    --text-color: #56565a; /* Dark Cool Gray for body text [cite: 378] */
-    --subtitle-color: #777678; /* Cool Gray for subtitles [cite: 377] */
-    --brand-font: Calibri, sans-serif; /* Universal typeface [cite: 172] */
+    --pal-blue: #283874;
+    --pal-orange: #ffa300;
+    --container-bg: #ffffff;
+    --background-color: #d8d7d6;
+    --text-color: #56565a;
+    --subtitle-color: #777678;
+    --brand-font: Calibri, sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    line-height: 1.6;
+    font-family: var(--brand-font);
+    overflow-y: scroll;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
-    font-family: var(--brand-font);
     margin: 0;
-    padding: 1rem;
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.6;
 }
 
 main {
+    display: block;
+    padding: 1rem;
+}
+
+.content-wrapper {
     max-width: 800px;
-    margin: 2rem auto;
+    width: 100%; 
+    margin: 1rem auto;
     padding: 2rem;
     background-color: var(--container-bg);
-    border: 1px solid #c0c0c0; /* A slightly darker border */
+    border: 1px solid #c0c0c0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-/* New Style for the Logo */
 #app-logo {
     display: block;
     margin-left: auto;
@@ -46,25 +58,20 @@ h1, h2, h3 {
 
 h1 {
     font-weight: bold;
-    text-transform: uppercase; /* Guideline for headlines  */
+    text-transform: uppercase;
     color: var(--text-color);
+    margin-top: 0;
     margin-bottom: 2rem;
 }
 
 h2#scenario-title {
-    color: var(--pal-blue); /* Blue for headings [cite: 324] */
-    text-transform: uppercase; /* Guideline for headlines  */
+    color: var(--pal-blue);
+    text-transform: uppercase;
     margin-top: 1.5rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem; /* Adjusted margin */
 }
 
-h3#scenario-subtitle {
-    font-size: 1.15rem;
-    font-weight: bold; /* Guideline for subheads  */
-    color: var(--subtitle-color);
-    margin-top: 0;
-    margin-bottom: 2rem;
-}
+/* Removed h3#scenario-subtitle style block */
 
 .controls {
     text-align: center;
@@ -93,11 +100,11 @@ button:hover {
     padding-top: 1rem;
 }
 
-/* Style the secondary button with the brand's accent color */
 #considerations-btn {
     display: block;
     margin: 1.5rem auto 0;
-    background-color: var(--pal-orange); /* Orange for accents [cite: 324] */
+    background-color: var(--pal-orange);
+    margin-bottom: 1rem;
 }
 
 p, #considerations-text {
@@ -110,4 +117,24 @@ p, #considerations-text {
 
 .hidden {
     display: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--pal-blue);
+}
+
+#feedback-link {
+    color: var(--pal-blue);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#copyright {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
 }
